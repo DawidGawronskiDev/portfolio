@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Logo from "./logo";
 
 const items = [
   {
@@ -23,7 +24,7 @@ export default function Header() {
   return (
     <header>
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="w-12 h-12 bg-gray-500 rounded-full" />
+        <Logo />
         <nav>
           <ul className="flex gap-8">
             {items.map(({ title, href }) => (
