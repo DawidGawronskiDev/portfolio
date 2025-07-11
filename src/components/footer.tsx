@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Logo from "./logo";
 import Paragraph from "./typography/paragraph";
 import NavLink from "./typography/nav-link";

@@ -1,3 +1,15 @@
-export default function Display({ children }: { children: React.ReactNode }) {
-  return <h1 className="text-5xl font-bold tracking-tight">{children}</h1>;
+import { cn } from "@/lib/utils";
+
+export default function Display({
+  className = "",
+  children,
+}: {
+  className?: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <h1 className={cn("text-5xl font-bold tracking-tight", className)}>
+      {children}
+    </h1>
+  );
 }

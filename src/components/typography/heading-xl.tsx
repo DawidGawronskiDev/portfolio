@@ -1,3 +1,15 @@
-export default function HeadingXL({ children }: { children: React.ReactNode }) {
-  return <h2 className="text-4xl font-bold tracking-tight">{children}</h2>;
+import { cn } from "@/lib/utils";
+
+export default function HeadingXL({
+  className = "",
+  children,
+}: {
+  className?: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <h2 className={cn("text-4xl font-bold tracking-tight", className)}>
+      {children}
+    </h2>
+  );
 }
