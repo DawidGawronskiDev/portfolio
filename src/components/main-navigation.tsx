@@ -1,4 +1,4 @@
-import Link from "next/link";
+import NavLink from "./typography/nav-link";
 
 const items = [
   {
@@ -25,9 +25,7 @@ export default function MainNavigation() {
       <ul className="flex gap-8">
         {items.map(({ title, href }) => (
           <li key={title}>
-            <Link href={href}>
-              <span className="text-sm">{title}</span>
-            </Link>
+            <NavLink href={href}>{title}</NavLink>
           </li>
         ))}
       </ul>
