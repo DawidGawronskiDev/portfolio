@@ -42,7 +42,7 @@ export default function Experience() {
                 position={[0, 1.56, -1.4]}
                 rotation={[-0.25, 0, 0]}
               >
-                <iframe src="/index.html" />
+                <iframe src="/portfolio.html" />
               </Html>
             </primitive>
           </Float>
